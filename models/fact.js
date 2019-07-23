@@ -6,7 +6,11 @@ const fact_schema = mongoose.Schema(
     fact : {
     type : String,
     required : true,
-}
+},
+    category :{
+        type : String,
+        required : true,
+    }
  })
  const fact = mongoose.model("fun_fact", fact_schema);
  module.exports = fact;
